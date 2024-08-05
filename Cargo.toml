@@ -1,0 +1,17 @@
+[package]
+
+name = "yaxpeax-avnera"
+version = "1.0.0"
+authors = [ "iximeow <me@iximeow.net>" ]
+license = "0BSD"
+repository = "http://git.iximeow.net/yaxpeax-avnera/"
+description = "avnera decoder for the yaxpeax project"
+keywords = ["yaxpeax", "diassembler", "avnera", "av7300", "av6201"]
+edition = "2018"
+
+[dependencies]
+yaxpeax-arch = { version = "0.3.2", default-features = false, features = [] }
+
+[[test]]
+name = "test"
+path = "test/test.rs"
